@@ -1,0 +1,234 @@
+body {
+  background-image: url("../Content/buitenhuys/Buitenhuys_interieur\ 1.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Caption text */
+.inleiding {
+  margin-left: 50%;
+  margin-top: 15%;
+  margin-right: 25%;
+}
+
+/* content blocks */
+.content-img {
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  height: 400px;
+  z-index: -2;
+  align-self: center;
+  align-content: center;
+  scale: 1.3;
+  transition: all .4s ease-in-out;
+  overflow: hidden;
+}
+
+.content-img:hover {
+  scale: 1.25;
+}
+
+.content-text, .text-2 {
+  display: grid;
+  align-content: center;
+  height: 400px;
+}
+
+.content-text {
+  margin-left: 30%;
+  margin-right: 0%;
+}
+
+.text-2 {
+  margin-left: 0%;
+  margin-right: 30%;
+}
+
+.content-box {
+  position: relative;
+  display: grid;
+  grid-template-columns: 33% 66%;
+  margin-top: 500px;
+  padding-top: 125px;
+  padding-bottom: 125px;
+  background-color: #000000bd;
+}
+
+.box-2 {
+  grid-template-columns: 66% 33%;
+  margin-bottom: 500px;
+}
+
+/* button */
+.meer-button {
+  font-size: 16px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  padding: 13px 20px 13px;
+  outline: 0;
+  cursor: pointer;
+  position: relative;
+  justify-content: center;
+  background-color: rgba(186, 84, 20, 0);
+  border: 1px solid white;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  z-index: 2;
+  color: white;
+  text-transform: uppercase;
+}
+
+.meer-button:after {
+  content: "";
+  background-color: #d15937;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.meer-button:hover:after {
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
+
+.conntent-box-button {
+  display: relative;
+  margin: auto;
+}
+
+.meer-button {
+  margin-top: 5%;
+}
+
+/* animations */
+.inleidingH1Layout, .inleidingTextLayout, .nav-wrapper, .box-animation {
+  transform: translate(0px, 0);
+  animation: animateText 3s, forwards;
+  opacity: 100;
+}
+
+.nav-wrapper {
+  animation: animateNav 2.5s, forwards;
+}
+
+.box-animation {
+  animation: boxAnimation 1.5s, forwards;
+}
+
+@keyframes animateText {
+  0% {
+    transform: translate(0px, 600px);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px, 0px);
+    opacity: 100;
+  }
+}
+
+@keyframes animateNav {
+  0% {
+    transform: translate(0px, -100px);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px, 0px);
+    opacity: 100;
+  }
+}
+
+@keyframes boxAnimation {
+  0% {
+    transform: translate(0px, 300px);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(0px, 0px);
+    opacity: 100;
+  }
+}
+
+/* responsive */
+@media (min-width: 768px) {
+  .meer-button {
+    padding: 13px 50px 13px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .inleiding {
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 30%;
+  }
+
+  .content-text, .text-2 {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .content-img {
+    height: 250px;
+    scale: 1;
+  }
+
+  .meer-button {
+    width: 100%;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .conntent-box-button {
+    margin: 0 auto;
+  }
+
+  .content-box {
+    grid-template-columns: 100%;
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .box-2 {
+    grid-template-columns: 100%;
+    margin-bottom: 100px;
+  }
+
+  .footerContent {
+    text-align: center;
+  }
+
+  .footer-logo img {
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .inleiding {
+    margin-top: 40%;
+  }
+
+  .generalH1Layout {
+    font-size: 30px;
+  }
+
+  .generalTextLayout {
+    font-size: medium;
+  }
+}

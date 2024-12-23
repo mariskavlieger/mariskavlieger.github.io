@@ -1,0 +1,281 @@
+/*--------------------main css--------------------*/
+body {
+  font-family: Helvetica;
+  background: #000000;
+  /* background:#0d0d0d; */
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+/*--------------------nav bar--------------------*/
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 100px 10px 80px;
+  align-items: center;
+}
+
+.nav-logo-text {
+  margin: auto;
+}
+
+.logo-img {
+  height: 70px;
+}
+
+.nav-buttons {
+  display: flex;
+}
+
+.nav-buttons > div {
+  margin-right: 80px;
+  font-size: 1.01em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nav-link-wrapper {
+  height: 22px;
+  border-bottom: 2px double transparent;
+  transition: border-bottom 0.6s;
+  align-self: center;
+}
+
+.nav-logo-text a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.nav-link-wrapper a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+  border-bottom: 2px double #d15937;
+  position: relative;
+  z-index: 99999;
+}
+
+#nav-bar {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.hamburger-menu {
+  display: none;  
+}
+
+
+
+/* Show the menu when toggled */
+.nav-buttons.open {
+  display: flex;
+}
+
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99999;
+}
+
+/*--------------------*text layouts-------------------*/
+.generalTextLayout{
+  color: white;
+  text-align:center;
+  line-height: 1.4;
+  font-size:larger;
+}
+
+.subTextLayout {
+  color: white;
+  text-align:center;
+  font-style: italic;
+}
+
+.generalH1Layout {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 60px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.generalH3Layout {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 2.5em;
+  color: white;
+  text-align: center;
+}
+
+.generalH4Layout {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 60px;
+  color: white;
+}
+
+.copyrightsTextLayout{
+  line-height: 1.4;
+  font-size:larger;
+  text-align: center;
+  color: #777;
+}
+
+.inleidingH1Layout{
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 60px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  text-align: left;
+  font-size: 100px;
+  font-family: 'Monoton';
+  line-height: 1;
+}
+.inleidingTextLayout{
+  color: white;
+  text-align:center;
+  line-height: 1.4;
+  font-size:larger;
+  margin-top: -30px;
+  text-align: left;
+}
+
+/*--------------------footer------------------------- */
+.footerContent {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #000000;
+}
+
+.fa-brands {
+  color: white;
+  font-size: 40px;
+  
+} 
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socials i {
+  margin: 10px;
+}
+
+.footer-logo img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  padding: 40px;
+  transition: all .8s ease-in-out ;
+ 
+}
+
+.fa-brands:hover{
+  scale: 1.2;
+}
+
+/* Toegevoegd: Media query voor nav-bar en andere elementen */
+@media only screen and (max-width: 768px) {
+  .nav-wrapper {
+    padding: 10px 20px;
+  }
+
+  .nav-logo-text a {
+    font-size: 1.5em; /* Reduce logo size */
+  }
+
+  .logo-img {
+    height: 50px; /* Logo smaller on small screens */
+  }
+
+  .nav-buttons {
+    flex-direction: column; /* Stack navigation buttons vertically */
+    align-items: center;
+  }
+
+  .nav-buttons > div {
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 10px; /* Add bottom margin */
+  }
+
+  .nav-link-wrapper {
+    height: auto;
+    padding-bottom: 5px;
+  }
+
+  /* Footer social icons resizing */
+  .fa-brands {
+    font-size: 30px; /* Adjust icon size */
+  }
+
+  
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-buttons {
+      display: none; /* Hide the navigation links by default */
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      right: 0;
+      background-color: #000000;
+      width: 100%;
+      padding: 10px 0;
+  }
+
+  .nav-link-wrapper {
+      text-align: center;
+      margin: 10px 0;
+      margin-right: 0; /* Remove the right margin */
+  }
+
+  .hamburger-menu {
+      display: block;
+      cursor: pointer;
+      font-size: 24px;
+      color: white;
+      z-index: 10;   
+  }
+
+  .nav-wrapper {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+  }
+}
+
+/* Media query voor nog kleinere schermen */
+@media only screen and (max-width: 480px) {
+  .footer-logo img {
+    width: 100px; /* Smaller logo for mobile */
+  }
+
+  .footerContent {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
+
+/* prevent right mouse click */
+.jw-album-image img, .jw-element-image img { pointer-events: none; -webkit-touch-callout: none; }
+.pswpshare-tooltip .pswpshare--download { display: none; }
