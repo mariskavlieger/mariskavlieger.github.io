@@ -242,7 +242,7 @@
     font-size: 60px;
   }
   .mySlides:hover {
-    transform: scale(1.0);
+    transform: none;
   }
 
   .img-gallery {
