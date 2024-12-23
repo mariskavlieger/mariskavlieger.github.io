@@ -9,9 +9,11 @@ body {
 
 /* Caption text */
 .inleiding {
-  margin-left: 50%;
-  margin-top: 15%;
-  margin-right: 25%;
+  padding-left: 50%;
+  padding-top: 15%;
+  padding-right: 25%;
+  max-width:100%;
+  overflow:hidden;
 }
 
 /* content blocks */
@@ -173,9 +175,9 @@ body {
 
 @media only screen and (max-width: 768px) {
   .inleiding {
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 30%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 30%;
   }
 
   .content-text, .text-2 {
@@ -229,7 +231,7 @@ body {
 
 @media only screen and (max-width: 480px) {
   .inleiding {
-    margin-top: 40%;
+    padding-top: 40%;
   }
 
   .generalH1Layout {
