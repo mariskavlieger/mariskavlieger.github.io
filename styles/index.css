@@ -1,5 +1,5 @@
 body {
-/*   background-image: url("../Content/buitenhuys/Buitenhuys_interieur\ 1.png"); */
+  background-image: url("../Content/buitenhuys/Buitenhuys_interieur\ 1.png");
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -187,6 +187,7 @@ body {
     overflow: hidden;
     scale: 1;
     width: 100%;
+    max-width:100%;
   }
 
   .content-img:hover {
