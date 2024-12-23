@@ -72,12 +72,12 @@ body {
 }
 
 .content-text {
-  margin-left: 30%;
+  padding-left: 30%;
 }
 
 .content-text-2 {
-  margin-left: 0%;
-  margin-right: 30%;
+  padding-left: 0%;
+  padding-right: 30%;
 }
 
 /* Content Box Layout */
@@ -305,8 +305,10 @@ body {
   }
 
   .content-text, .content-text-2 {
-    margin: 0;
+    padding: 0;
     text-align: center;
+    max-width: 100%;
+    overflow: scroll;
   }
 
    .content-img {
