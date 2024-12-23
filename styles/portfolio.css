@@ -8,6 +8,10 @@
   width: 100%;
   text-align: center;
 }
+  .inleiding{
+    padding: 0%;
+  }
+
 
 /* Gallery */
 .img-gallery {
@@ -231,8 +235,14 @@
 
 /* Media Queries */
 @media (max-width: 768px) {
+  .inleiding{
+    padding: 5%;
+  }
   .inleidingH1Layout {
     font-size: 60px;
+  }
+  .mySlides:hover {
+    transform: scale(1.0);
   }
 
   .img-gallery {
