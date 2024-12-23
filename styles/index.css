@@ -12,6 +12,7 @@ body {
   margin-left: 50%;
   margin-top: 15%;
   margin-right: 25%;
+  overflow:hidden;
 }
 
 /* content blocks */
