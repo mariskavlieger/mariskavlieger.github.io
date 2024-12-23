@@ -184,13 +184,14 @@ body {
   }
 
   .content-img {
-    
+    overflow: hidden;
     scale: 1;
     width: 100%;
   }
 
   .content-img:hover {
   scale: 1;
+    overflow: hidden;
   }
 
   .meer-button {
