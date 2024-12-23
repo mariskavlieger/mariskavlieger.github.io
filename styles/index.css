@@ -189,6 +189,10 @@ body {
     width: 100%;
   }
 
+  .content-img:hover {
+  scale: 1;
+  }
+
   .meer-button {
     width: 100%;
     font-size: 14px;
